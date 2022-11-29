@@ -4,7 +4,7 @@ const validateEmail = (email) => {
     const val = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
     return val.test(email);
 };
-
+// setting up the criteria for the userSchema and the ValidateEmail. 
 const userSchema = new Schema(
     {
         username: {

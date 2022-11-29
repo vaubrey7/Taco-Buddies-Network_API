@@ -28,7 +28,7 @@ const reactionSchema = new Schema(
         }
     }
 );
-
+// sets criteria for reaction and thought schema
 const thoughtSchema = new Schema(
     {
         thoughtText: {

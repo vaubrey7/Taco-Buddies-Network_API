@@ -22,7 +22,7 @@ const thoughtsController = {
         .select('-__v')
         .then(dbThoughtData => {
             if (!dbThoughtData) {
-                res.status(404).json({ message: 'No thoughts with this ID' });
+                res.status(404).json({ message: 'WARNING WILL ROBINSON No thoughts with this ID' });
                 return;
             }
             res.json(dbThoughtData);
@@ -32,14 +32,14 @@ const thoughtsController = {
             res.sendStatus(400);
         });
     },
-
+//create a thought via users
     createThought({ body }, res) {
         thoughts.create(body)
         .then(dbThoughtData => {
             users.findOneAndUpdate({ _id: body.userId }, { $push: { thoughts: dbThoughtData._id }}, { new: true })
             .then(dbUserData => {
                 if (!dbUserData) {
-                    res.status(404).json({ message: 'No user with this ID' });
+                    res.status(404).json({ message: 'WARNING WILL ROBINSON No user with this ID' });
                     return;
                 }
                 res.json(dbUserData);
@@ -53,7 +53,7 @@ const thoughtsController = {
         thoughts.findOneAndUpdate({ _id: params.id }, body, { new: true, runValidators: true })
         .then(dbThoughtData => {
             if (!dbThoughtData) {
-                res.status(404).json({ message: 'No thought with this ID' });
+                res.status(404).json({ message: 'WARNING WILL ROBINSON No thought with this ID' });
                 return;
             }
             res.json(dbThoughtData);
@@ -66,7 +66,7 @@ const thoughtsController = {
         thoughts.findOneAndDelete({ _id: params.id })
         .then(dbThoughtData => {
             if (!dbThoughtData) {
-                res.status(404).json({ message: 'No thought with this ID' });
+                res.status(404).json({ message: 'WARNING WILL ROBINSON No thought with this ID' });
                 return;
             }
             return users.findOneAndUpdate({ thoughts: params.id }, { $pull: { thoughts: params.id } }, { new: true }
@@ -75,21 +75,21 @@ const thoughtsController = {
         .then(dbUserData => {
             console.log(dbUserData)
             if (!dbUserData) {
-              res.status(404).json({ message: 'No user found with this ID!' });
+              res.status(404).json({ message: 'WARNING WILL ROBINSON No user found with this ID!' });
               return;
             }
             res.json(dbUserData);
           })
           .catch(err => res.json(err));
     },
-
+// create reaction by id 
     createReaction({ params, body }, res) {
         console.log(params, body);
         thoughts.findOneAndUpdate({ _id: params.thoughtId }, { $push: { reactions: body }}, { new: true, runValidators: true })
         .select('-__v')
         .then(dbThoughtData => {
             if (!dbThoughtData) {
-                res.status(404).json({ message: 'No thought with this ID' });
+                res.status(404).json({ message: 'WARNING WILL ROBINSON No thought with this ID' });
                 return;
             }
             res.json(dbThoughtData);
@@ -99,12 +99,12 @@ const thoughtsController = {
             res.sendStatus(400);
         });
     },
-
+// delete reaction by id
     deleteReaction({ params }, res) {
         thoughts.findOneAndUpdate({ _id: params.thoughtId }, { $pull: { reactions: { reactionId: params.reactionId }}}, { new: true })
         .then(dbThoughtData => {
             if (!dbThoughtData) {
-                res.status(404).json({ message: 'No thought with this ID' });
+                res.status(404).json({ message: 'WARNING WILL ROBINSON No thought with this ID' });
                 return;
             }
             res.json(dbThoughtData);
