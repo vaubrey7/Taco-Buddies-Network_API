@@ -9,9 +9,9 @@
       },
       "repository": {
         "type": "git",
-        "url": "git+https://github.com/leomorenodevelops/Social-Network-API.git"
+        "url": "https://github.com/vaubrey7/Taco-Buddies-Network_API"
       },
-    "license": "MIT",
+    "license": "ISC",
     "dependencies": {
       "express": "^4.17.1",
       "moment": "^2.27.0",
