@@ -41,7 +41,7 @@ This projectwas made using:
 To get started, clone this repository by inputting the following into your terminal:
 <br>
 ```
-git clone git@github.com:vaubrey7/socialnetworkapi.git
+git clone git@github.com:vaubrey7/Taco-Buddies-Network-API.git
 ```
 
 Install dependencies:
@@ -64,4 +64,4 @@ This project is licensed under MIT
 
 ## Contributing
 Major Contributor and Thanks to Jason Sin for collaberating with me on this. 
-:sun: [Vaughn Aubrey](https://github.com/vaubrey7)
+ [Vaughn Aubrey](https://github.com/vaubrey7)
