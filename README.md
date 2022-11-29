@@ -41,7 +41,7 @@ This projectwas made using:
 To get started, clone this repository by inputting the following into your terminal:
 <br>
 ```
-git clone git@github.com:jasonsin88/socialnetworkapi.git
+git clone git@github.com:vaubrey7/socialnetworkapi.git
 ```
 
 Install dependencies:
