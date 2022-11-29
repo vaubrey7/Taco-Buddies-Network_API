@@ -1,9 +1,9 @@
-<h1 align ="center"> Social Networking API 😮‍💨</h1>
+<h1 align ="center"> Social Networking API 😮</h1>
   
 <p align ="center">
-    <a href="https://github.com/jasonsin88"><img src="https://img.shields.io/github/followers/jasonsin88?style=social" target="_blank" /></a>
-    <a href="https://twitter.com/_anotherjason">
-        <img alt="Twitter: _anotherjason" src="https://img.shields.io/twitter/follow/_anotherjason?style=social" target="_blank" />
+    <a href="https://github.com/vaubrey7"><img src="https://img.shields.io/github/followers/vaubrey7?style=social" target="_blank" /></a>
+    <a href="https://twitter.com/interact_co">
+        <img alt="Twitter: interact_co" src="https://img.shields.io/twitter/follow/interact_co?style=social" target="_blank" />
     </a>
 </p>
   
