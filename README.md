@@ -1,4 +1,4 @@
-<h1 align ="center"> Social Networking API 😮</h1>
+<h1 align ="center"> Taco Buddies Network API 😮</h1>
   
 <p align ="center">
     <a href="https://github.com/vaubrey7"><img src="https://img.shields.io/github/followers/vaubrey7?style=social" target="_blank" /></a>
