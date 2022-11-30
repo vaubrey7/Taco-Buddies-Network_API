@@ -14,7 +14,7 @@ const thoughtsController = {
         Thoughts.findOne({ _id: req.params.thoughtsId })
             .then((thought) =>
                 !thought
-                    ? res.status(404).json({ message: 'No thought with that ID!' })
+                    ? res.status(404).json({ message: 'WARNING WILL ROBINSON No thought with that ID!' })
                     : res.json(thought)
             )
     },
@@ -113,7 +113,7 @@ const thoughtsController = {
         )
             .then((thought) =>
                 !thought
-                    ? res.status(404).json({ message: 'No thought with this ID!'})
+                    ? res.status(404).json({ message: 'WARNING WILL ROBINSON No thought with this ID!'})
                     : res.json(thought)
             )
             .catch((err) => res.status(500).json(err));

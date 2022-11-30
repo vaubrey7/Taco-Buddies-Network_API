@@ -31,7 +31,7 @@ const usersController = {
             .catch((err) => res.status(500).json(err));
     },
 
-    // update a single user by ID cause your old user ID is
+    // update a single user by ID cause your old user ID is no longer tollerated by the taco community
     updateUser(req, res) {
         Users.findOneAndUpdate(
             { _id: req.params.userId },
