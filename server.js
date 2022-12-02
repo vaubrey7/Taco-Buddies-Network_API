@@ -1,3 +1,4 @@
+// using the routes, express and the db we can now set up our Taco buddie port 
 const express = require('express');
 const db = require('./config/connection');
 const routes = require('./routes');
